@@ -1,6 +1,7 @@
 "use client";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
@@ -20,8 +21,14 @@ export default function HomePage() {
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.2 }}
           >
-            <div className="flex h-9 w-9 items-center justify-center rounded-2xl bg-sky-500/20 ring-1 ring-sky-400/60">
-              <span className="text-sm font-semibold text-sky-200">NW</span>
+            <div className="relative h-9 w-9 overflow-hidden rounded-2xl">
+              <Image
+                src="/nightwavelogo.png"
+                alt="Nightwave Studio Logo"
+                width={36}
+                height={36}
+                className="object-cover"
+              />
             </div>
             <div className="hidden leading-tight sm:block">
               <p className="text-sm font-semibold tracking-tight text-slate-50">
