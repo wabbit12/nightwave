@@ -4,7 +4,8 @@ export default function Footer() {
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-4 sm:flex-row lg:px-6">
         <p className="text-center sm:text-left">
           Nightwave Studio is a fictional creative studio, crafted as a design
-          and UX case study.
+          and UX case study by{" "}
+          <span className="font-medium text-slate-100">Charls Dave Recto</span>.
         </p>
         <p className="text-center sm:text-right">
           <span className="font-medium text-slate-100">Nightwave Studio</span>{" "}
